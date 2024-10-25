@@ -8,7 +8,7 @@ application = Flask(__name__)
 @application.route("/")
 def index():
     return "Application is running:)"
-@application.route("/api")
+
 def load_model(text):
     loaded_model = None
     with open('basic_classifier.pkl', 'rb') as fid:
